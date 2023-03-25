@@ -6,7 +6,8 @@
 
 /*Component*/
 
-@import "object/component/*.scss";
+@use  "object/component/*" as *;
+// @use "object/component/_hoge" as *;
 
 /*Project*/
 
