@@ -9,32 +9,32 @@ import glob from "glob";
 import path from "path";
 import fs from "fs";
 
-export default defineConfig ( {
+export default defineConfig({
 	plugins: [
-		liveReload( __dirname + '/**/*.php' ),
+		liveReload(__dirname + '/**/*.php'),
 	],
 	root: '',
 	base: process.env.NODE_ENV === 'development' ? './' : '/dist/',
 	build: {
-		outDir: path.resolve( __dirname, './dist' ),
+		outDir: path.resolve(__dirname, './dist'),
 		emptyOutDir: true,
 		manifest: true,
 		target: 'es2018',
 		rollupOptions: {
 			input: {
-				main: path.resolve( __dirname + '/main.js' )
+				main: path.resolve(__dirname + '/main.js')
 			},
 			output: {
 				entryFileNames: `assets/[name].js`,
 				chunkFileNames: `assets/[name].js`,
-				assetFileNames: ( { name } ) => {
-					if ( /\.( gif|jpeg|jpg|png|svg|webp| )$/.test( name ?? '' ) ) {
+				assetFileNames: ({ name }) => {
+					if (/\.( gif|jpeg|jpg|png|svg|webp| )$/.test(name ?? '')) {
 						return 'assets/images/[name].[ext]';
 					}
-					if ( /\.css$/.test( name ?? '' ) ) {
+					if (/\.css$/.test(name ?? '')) {
 						return 'assets/css/[name].[ext]';
 					}
-					if ( /\.js$/.test( name ?? '' ) ) {
+					if (/\.js$/.test(name ?? '')) {
 						return 'assets/js/[name].[ext]';
 					}
 					return 'assets/[name].[ext]';
@@ -62,12 +62,12 @@ export default defineConfig ( {
 			],
 		},
 		preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/main.scss";`,
-      },
-    },
+			scss: {
+				additionalData: "./main.scss"
+			},
+		},
 		plugins: [
 			sassGlobImports,
 		]
 	},
-} );
+});
