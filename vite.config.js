@@ -61,13 +61,8 @@ export default defineConfig({
 				autoprefixer,
 			],
 		},
-		preprocessorOptions: {
-			scss: {
-				additionalData: "./main.scss"
-			},
-		},
-		plugins: [
-			sassGlobImports,
-		]
 	},
+	plugins: [
+		sassGlobImports(),
+	]
 });
