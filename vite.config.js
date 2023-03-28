@@ -12,6 +12,7 @@ import fs from "fs";
 export default defineConfig({
 	plugins: [
 		liveReload(__dirname + '/**/*.php'),
+		sassGlobImports(),
 	],
 	root: '',
 	base: process.env.NODE_ENV === 'development' ? './' : '/dist/',
@@ -62,7 +63,4 @@ export default defineConfig({
 			],
 		},
 	},
-	plugins: [
-		sassGlobImports(),
-	]
 });
