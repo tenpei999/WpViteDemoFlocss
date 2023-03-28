@@ -1,0 +1,11 @@
+@use "../../Foundation/index" as *;
+
+.p-title {
+  color: red;
+  @include mq(screen02) {
+    color: blue;
+  }
+  @include mq(screen03) {
+    color: yellow;
+  }
+}

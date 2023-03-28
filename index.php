@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<div class="grid place-items-center h-full">
-	<h1>
+<main class="l-main">
+	<h1 class="p-title">
 		<p class="c-hoge">ほげ</p>
 		<p class="c-hoge__huga">ふぐ</p>
 	</h1>
-</div>
+</main>
 <?php get_footer(); ?>
