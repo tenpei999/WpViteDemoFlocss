@@ -1,0 +1,12 @@
+.c-button-square {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 47px;
+  &__square {
+    width: 45%;
+    padding-bottom: 45%;
+    margin-bottom: 5%;
+    background-color: #ddd;
+  }
+}

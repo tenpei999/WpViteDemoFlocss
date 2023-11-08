@@ -9,6 +9,9 @@ import glob from "glob";
 import path from "path";
 import fs from "fs";
 
+const themePath = process.env.NODE_ENV === 'development' ? '/wp-content/themes/kjuku' : '';
+const assets = process.env.NODE_ENV === 'development' ? '/assets/' : '../';
+
 export default defineConfig({
 	plugins: [
 		liveReload(__dirname + '/**/*.php'),
@@ -56,6 +59,11 @@ export default defineConfig({
 		},
 	},
 	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `$base-dir: '` + themePath + assets + `';`,
+			},
+		},
 		postcss: {
 			plugins: [
 				postcssNesting,
