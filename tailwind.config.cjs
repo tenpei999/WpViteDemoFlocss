@@ -8,7 +8,11 @@ module.exports = {
     "./assets/styles/input.css", // assets/stylesフォルダの中のCSSファイルを監視
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gold: '#82691B',
+      },
+    },
   },
   plugins: [
   ],

@@ -1,5 +1,11 @@
-.c-icatch {
-  font-size: 7.4vw;
+@use "../../Foundation/index" as *;
+
+.c-catchphrase {
+  font-size: 10vw;
+  @include mq (screen02) {
+    font-size: 7.4vw;
+  }
+  
   &__particle {
     font-size: 90%;
   }

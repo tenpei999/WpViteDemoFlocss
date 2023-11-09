@@ -1,0 +1,9 @@
+@use "../../Foundation/index" as *;
+
+.c-title {
+  &-gold {
+    color: $gold;
+    border-color: $gold;
+    border-width: 0.5px;
+  }
+}
