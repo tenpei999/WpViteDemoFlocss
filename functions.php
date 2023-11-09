@@ -101,7 +101,7 @@ function readScript()
 
 	wp_enqueue_style(
 		'Noto Sans Jp',
-		'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap',
+		'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Sans:wght@700&display=swap',
 		[]
 	);
 }
