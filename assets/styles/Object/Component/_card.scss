@@ -1,0 +1,45 @@
+@use "../../Foundation/index" as *;
+
+.c-card {
+  &--ability {
+    position: relative;
+
+    &__head {
+      display: flex;
+    }
+
+    &__num-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      background-color: $gold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-family: $din;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    &__title {
+      padding-top: 20px;
+      line-height: 50px;
+      font-size: $mediunFontSize;
+      display: inline-block;
+      position: relative;
+      border-bottom: 1px solid;
+      border-color: $gold;
+    }
+
+    &__sentence {
+      padding: 30px 16px 0 16px;
+      font-size: $baseFontSize;
+      text-align: justify;
+      padding-bottom: 77px;
+    }
+  }
+}

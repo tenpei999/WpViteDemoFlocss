@@ -9,8 +9,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'noto-sans': ['Noto Sans JP', 'sans-serif'],
+        'kozuka': ['kozuka-gothic-pr6n', 'sans-serif'],
+
+      },
       colors: {
         gold: '#82691B',
+      },
+      width: {
+        '90p': '90%',
+        '80p': '80%',
+        '70p': '70%',
+        '65p': '65%',
       },
     },
   },

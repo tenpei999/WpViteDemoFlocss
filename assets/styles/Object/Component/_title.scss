@@ -2,8 +2,13 @@
 
 .c-title {
   &-gold {
+    font-family: $accentFont;
     color: $gold;
     border-color: $gold;
     border-width: 0.5px;
+  }
+  &-silver {
+    color: $silver;
+    position: absolute;
   }
 }

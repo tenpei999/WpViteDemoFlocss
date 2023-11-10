@@ -92,11 +92,24 @@ function readScript()
 
 	$kit_id = 'kjk6cks'; // あなたのAdobe FontsのKit IDに置き換えてください
 
-	// Adobe Fontsのスクリプトを登録します
 	wp_enqueue_script('mytheme-typekit', 'https://use.typekit.net/' . $kit_id . '.js', array(), null, false);
 
-	// スクリプトが読み込まれた後にAdobe Fontsのスクリプトを初期化するためのインラインスクリプトを追加します
 	wp_add_inline_script('mytheme-typekit', 'try{Typekit.load({ async: true })}catch(e){}');
+
+	// 提供されたAdobe Fontsのローディングスクリプトをインラインで追加します。
+	$inline_script = <<<EOD
+			(function(d) {
+					var config = {
+							kitId: '$kit_id',
+							scriptTimeout: 3000,
+							async: true
+					},
+					h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			})(document);
+			EOD;
+
+	// 'after'を使用して、Adobe Fontsスクリプトの後に実行されるように設定します。
+	wp_add_inline_script('mytheme-typekit', $inline_script, 'after');
 
 
 	wp_enqueue_style(

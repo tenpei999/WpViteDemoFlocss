@@ -16,7 +16,7 @@ $logo_header_path = $template_directory_uri . $logo_header_img_path . filemtime(
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="font-noto-sans">
   <header class="header fixed w-screen flex justify-around">
     <nav class="header-logo mt-5">
       <a href="#">
