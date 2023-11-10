@@ -21,8 +21,11 @@
 			</li>
 		</ul>
 	</section>
-	<section class="p-features flex justify-center">
-		<h2 class="c-title-silver">p-features</h2>
+	<section class="p-features flex justify-center relative">
+		<div class="flex flex-col absolute left-10p top-6">
+			<h2 class="c-title-silver lg:top-28">FEATURES</h2>
+			<p class="c-title-silver__sub">カンザキジュクの特徴</p>
+		</div>
 		<div class="p-features__wrapper w-full md:w-90p lg:w-70p flex flex-col justify-center items-center text-center">
 			<section class="pt-32 justify-center lg:w-80p">
 				<h3 class="c-title-gold inline-block py-2.5 px-4 text-2xl">What’sカンザキジュク</h3>

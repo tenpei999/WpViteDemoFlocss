@@ -8,7 +8,16 @@
     border-width: 0.5px;
   }
   &-silver {
+    font-family: $accentFont;
     color: $silver;
-    position: absolute;
+    font-size: 32px;
+    line-height: 64px;
+    letter-spacing: 10px;
+    &__sub {
+      text-align: justify;
+      text-align-last: justify;
+      width: 93%;
+      transform: translateY(-10px);
+    }
   }
 }

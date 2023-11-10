@@ -3,6 +3,8 @@
 .c-card {
   &--ability {
     position: relative;
+    box-shadow: 4px 4px 10px 0px #00000040;
+
 
     &__head {
       display: flex;
