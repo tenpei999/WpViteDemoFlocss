@@ -86,38 +86,38 @@
 				<p class="c-title-silver__sub">指導指針</p>
 			</div>
 		</div>
-		<article class="c-background--policy absolute flex  flex-col md:flex-row items-center place-content-around w-90p lg:w-79p right-0 bottom-0 h-4/5 lg:h-full">
+		<article class="c-background--policy absolute flex  flex-col md:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-4/5 lg:h-full">
 			<ul class="p-policy__list">
 				<li class="pt-4 md:pt-0">
 					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl font-bold text-left">
+						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl c-clamp--1215 font-bold text-left">
 							高１・２生
 						</a>
 					</button>
 				</li>
 				<li class="pt-4 md:pt-8">
 					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl font-bold text-left">
+						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
 							高３成長期（4月〜）
 						</a>
 					</button>
 				</li>
 				<li class="pt-4 md:pt-8">
 					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl font-bold text-left">
+						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
 							高３直前期（夏休み〜）
 						</a>
 					</button>
 				</li>
 				<li class="pt-4 md:pt-8">
 					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl font-bold text-left">
+						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
 							慶早ICU・GMARCH志望者
 						</a>
 					</button>
 				</li>
 			</ul>
-			<div class="bg-white w-80p mt-8 md:mt-0 md:w-40p h-90p">
+			<div class="bg-white w-80p mb-8 md:mb-0 mt-8 md:mt-0 md:w-40p h-90p">
 				<span></span>
 			</div>
 		</article>
