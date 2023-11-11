@@ -1,0 +1,21 @@
+.c-background {
+  &--main-visual {
+    background: url($base-dir + 'images/main-visual.jpg') bottom no-repeat;
+    background-size: cover;
+  }
+
+  &--features {
+    background: url($base-dir + 'images/background-features.png') bottom no-repeat;
+    background-size: cover;
+  }
+
+  &--policy {
+    background: url($base-dir + 'images/background-rectangle.jpg') bottom no-repeat;
+    background-size: cover;
+  }
+
+  &--resolts {
+    background: linear-gradient(180deg, #CDCDCD 0%, #FFFFFF 52.08%, #CDCDCD 98.44%);
+
+  }
+}
