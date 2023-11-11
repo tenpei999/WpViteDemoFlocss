@@ -1,5 +1,8 @@
 .p-policy {
   &__list {
-    width: 40%;
+    width: 80%;
+    @include mq(screen02) {
+      width: 40%;
+    }
   }
 }
