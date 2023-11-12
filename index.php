@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+get_header();
+$template_directory_uri = get_template_directory_uri();
+
+$img_path_82per = '/assets/images/82per.png?';
+$path_82per = $template_directory_uri . $img_path_82per . filemtime(get_template_directory() . $img_path_82per);
+
+$img_path_90per = '/assets/images/90per.png?';
+$path_90per = $template_directory_uri . $img_path_90per . filemtime(get_template_directory() . $img_path_90per);
+?>
 <main>
 	<section class="c-background--main-visual w-screen h-screen flex items-center justify-center">
 		<ul class="w-7/12 flex flex-col items-center justify-center text-white">
@@ -23,7 +32,7 @@
 	</section>
 	<section class="c-background--features flex justify-center relative">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
-			<h2 class="c-title-silver lg:top-28">FEATURES</h2>
+			<h2 class="c-title-silver lg:top-28 tracking-5">FEATURES</h2>
 			<p class="c-title-silver__sub">カンザキジュクの特徴</p>
 		</div>
 		<div class="p-features__wrapper w-full md:w-90p lg:w-70p flex flex-col justify-center items-center text-center">
@@ -36,7 +45,7 @@
 					弊塾は受講生一人ひとりとの対話を通し、本人の考えが及ばないレベルへの思考へと高めることを得意としています。答えは本人が持っています。私たちはそれを引き出し、対話（dialogue）を重ね、良き解をともにつくり上げていきます。それが、多数の難関大学合格者を弊塾が生み出せている大きなポイントです。深い思考へと誘う”対話”指導が圧倒的な合格実績につながっています。　
 				</p>
 			</section>
-			<section class="pt-12 flex flex-col justify-center items-center"> 
+			<section class="pt-12 flex flex-col justify-center items-center">
 				<h3 class="c-title-gold inline-block py-2.5 px-4 text-2xl">身につく力</h3>
 				<p class="w-65p text-justify text-base pt-6">
 					「未来を切り開く主体的な人材を育むこと」を理念におき、「何のために大学で学ぶのか」「何を学ぶのか」「その学びをどう社会に還元するのか」を自分事として考え抜ける志の高い高校生を育てます。
@@ -79,14 +88,14 @@
 			</section>
 		</div>
 	</section>
-	<section class="h-90vh relative p-policy">
+	<section class=" h-140vh md:h-90vh relative p-policy">
 		<div class="relative w-21p">
 			<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 				<h2 class="c-title-silver">POLICY</h2>
 				<p class="c-title-silver__sub">指導指針</p>
 			</div>
 		</div>
-		<article class="c-background--policy absolute flex  flex-col md:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-4/5 lg:h-full">
+		<article class="c-background--policy absolute flex  flex-col md:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
 			<ul class="p-policy__list">
 				<li class="pt-4 md:pt-0">
 					<button class="c-button--gold w-full">
@@ -117,13 +126,75 @@
 					</button>
 				</li>
 			</ul>
-			<div class="bg-white w-80p mb-8 md:mb-0 mt-8 md:mt-0 md:w-40p h-90p">
+			<div id="white-space" class="bg-white w-80p mb-8 md:mb-0 mt-8 md:mt-0 md:w-40p h-90p">
 				<span></span>
 			</div>
 		</article>
 	</section>
-	<section class="c-background--results">
-
+	<section class="c-background--silver flex text-center items-center justify-center relative pt-32">
+		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+			<h2 class="c-title-silver tracking-3">RESULTS</h2>
+			<p class="c-title-silver__sub">合格実績</p>
+		</div>
+		<article class="w-60p h-60p bg-white">
+			<section>
+				<h3 class="c-title-gold inline-block mt-16 py-2.5 px-4 text-2xl">カンザキジュクの合格率</h3>
+				<div class="flex gap-7 pt-5 px-14">
+					<div class="flex justify-center w-6/12">
+						<figure class="w-40p flex flex-col">
+							<figcaption><img src="<?php echo $path_82per ?>" class="m-auto" alt=""></figcaption>
+							<p>1次選考合格率</p>
+						</figure>
+						<figure class="w-40p flex flex-col">
+							<figcaption><img src="<?php echo $path_90per ?>" class="m-auto" alt=""></figcaption>
+							<p>最終合格率</p>
+						</figure>
+					</div>
+					<p class=" w-6/12">
+						これまで82%の生徒を最終合格まで導いてきました。1次選考までかぎって言えば、90%を超えています。その高い合格実績を出すことができているのは、生徒の思いを大事に育てていく「カンザキメソッド」にあります。対話を通して、探究を進め、それを元に各大学の研究者に向けてどんなメッセージを発するのか。そこを一緒に作り上げていきます。
+					</p>
+				</div>
+			</section>
+			<section class="pt-12">
+				<h3 class="c-title-gold inline-block py-2.5 px-4 text-2xl">
+					合格実績
+				</h3>
+				<p>
+					早稲田大学・慶應義塾大学・上智大学をはじめ、多くの難関大学合格者を輩出しています。
+				</p>
+				<ul class="flex flex-col flex-wrap text-left h-72 min-h-288 leading-7 mx-8 border">
+					<li>慶應義塾大学総合政策学部</li>
+					<li>慶應義塾大学環境情報学部</li>
+					<li>慶應義塾大学法学部</li>
+					<li>慶應義塾大学文学部</li>
+					<li>早稲田大学文化構想学部</li>
+					<li>上智大学国際教養学部</li>
+					<li>国際基督教大学教養学部</li>
+					<li>学習院大学文学部</li>
+					<li>明治大学文学部</li>
+					<li>明治大学農学部</li>
+					<li>青山学院大学コミュニティ人間科学部</li>
+					<li>立教大学GLAP</li>
+					<li>立教大学現代心理学部</li>
+					<li>立教大学文学部</li>
+					<li>立教大学異文化コミュニケーション学部</li>
+					<li>中央大学文学部</li>
+					<li>中央大学国際経営学部</li>
+					<li>法政大学キャリアデザイン学部</li>
+					<li>法政大学人間環境学部</li>
+					<li>法政大学国際文化学部</li>
+					<li>立命館大学文学部</li>
+					<li>立命館大学映像学部</li>
+					<li>立命館アジア太平洋大学国際経営学部</li>
+					<li>関西学院大学総合政策学部</li>
+					<li>津田塾大学総合政策学部</li>
+					<li>昭和女子大学グローバルビジネス学部</li>
+					<li>明治学院大学社会学部</li>
+					<li>成城大学社会イノベーション学部</li>
+					<li>東京都市大学人間科学部</li>
+				</ul>
+			</section>
+		</article>
 	</section>
 </main>
 <?php get_footer(); ?>
