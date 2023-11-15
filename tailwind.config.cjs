@@ -29,6 +29,7 @@ module.exports = {
         '35p': '35%',
         '21p': '21%',
         '50r': '800px',
+        '484px': '484px',
       },
       height: {
         '90p': '90%',
@@ -39,6 +40,7 @@ module.exports = {
         '70vh': '70vh',
         '60vh': '60vh',
         '50vh': '50vh',
+        '589px': '589px',
         '35r': '550px',
       },
       inset: {
@@ -71,6 +73,7 @@ module.exports = {
       },
       padding: {
         '30': '7.5rem',
+        '15': '3.75rem',
       },
       minHeight: {
         '288': '288px',

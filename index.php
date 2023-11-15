@@ -2,11 +2,24 @@
 get_header();
 $template_directory_uri = get_template_directory_uri();
 
-$img_path_82per = '/assets/images/82per.png?';
-$path_82per = $template_directory_uri . $img_path_82per . filemtime(get_template_directory() . $img_path_82per);
+function get_image_path($file_name, $extension = 'png')
+{
+	global $template_directory_uri; // グローバル変数を関数内で使う宣言
+	$img_path = "/assets/images/{$file_name}.{$extension}?";
+	$full_path = $template_directory_uri . $img_path . filemtime(get_template_directory() . $img_path);
+	return $full_path;
+}
 
-$img_path_90per = '/assets/images/90per.png?';
-$path_90per = $template_directory_uri . $img_path_90per . filemtime(get_template_directory() . $img_path_90per);
+$path_82per = get_image_path('82per');
+$path_90per = get_image_path('90per');
+$path_girl = get_image_path('girl');
+$path_boy = get_image_path('boy');
+$path_82per_png = get_image_path('82per', 'png');
+$path_90per_png = get_image_path('90per', 'png');
+$path_girl_png = get_image_path('girl', 'png');
+$path_boy_png = get_image_path('boy', 'png');
+$path_Asan_png = get_image_path('Asan', 'png');
+$path_Bsan_png = get_image_path('Bsan', 'png');
 ?>
 <main>
 	<section class="c-background--main-visual w-screen h-screen flex items-center justify-center">
@@ -131,7 +144,9 @@ $path_90per = $template_directory_uri . $img_path_90per . filemtime(get_template
 			</div>
 		</article>
 	</section>
-	<section class="c-background--silver flex text-center items-center justify-center relative pt-32">
+	<section class="c-background--silver flex text-center items-center justify-center relative pt-32 pb-32">
+		<img class="absolute left-0 bottom-0" src="<?php echo $path_girl_png ?>" alt="女子生徒の画像">
+		<img class="absolute right-0 -bottom-4" src="<?php echo $path_boy_png ?>" alt="男子生徒の画像">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver tracking-3">RESULTS</h2>
 			<p class="c-title-silver__sub">合格実績</p>
@@ -142,15 +157,15 @@ $path_90per = $template_directory_uri . $img_path_90per . filemtime(get_template
 				<div class="flex gap-7 pt-5 px-14">
 					<div class="flex justify-center w-6/12">
 						<figure class="w-40p flex flex-col">
-							<figcaption><img src="<?php echo $path_82per ?>" class="m-auto" alt=""></figcaption>
+							<figcaption><img src="<?php echo $path_82per_png ?>" class="m-auto" alt=""></figcaption>
 							<p>1次選考合格率</p>
 						</figure>
 						<figure class="w-40p flex flex-col">
-							<figcaption><img src="<?php echo $path_90per ?>" class="m-auto" alt=""></figcaption>
+							<figcaption><img src="<?php echo $path_90per_png ?>" class="m-auto" alt=""></figcaption>
 							<p>最終合格率</p>
 						</figure>
 					</div>
-					<p class=" w-6/12">
+					<p class="w-6/12 text-left">
 						これまで82%の生徒を最終合格まで導いてきました。1次選考までかぎって言えば、90%を超えています。その高い合格実績を出すことができているのは、生徒の思いを大事に育てていく「カンザキメソッド」にあります。対話を通して、探究を進め、それを元に各大学の研究者に向けてどんなメッセージを発するのか。そこを一緒に作り上げていきます。
 					</p>
 				</div>
@@ -159,41 +174,102 @@ $path_90per = $template_directory_uri . $img_path_90per . filemtime(get_template
 				<h3 class="c-title-gold inline-block py-2.5 px-4 text-2xl">
 					合格実績
 				</h3>
-				<p>
+				<p class="pt-6">
 					早稲田大学・慶應義塾大学・上智大学をはじめ、多くの難関大学合格者を輩出しています。
 				</p>
-				<ul class="flex flex-col flex-wrap text-left h-72 min-h-288 leading-7 mx-8 border">
-					<li>慶應義塾大学総合政策学部</li>
-					<li>慶應義塾大学環境情報学部</li>
-					<li>慶應義塾大学法学部</li>
-					<li>慶應義塾大学文学部</li>
-					<li>早稲田大学文化構想学部</li>
-					<li>上智大学国際教養学部</li>
-					<li>国際基督教大学教養学部</li>
-					<li>学習院大学文学部</li>
-					<li>明治大学文学部</li>
-					<li>明治大学農学部</li>
-					<li>青山学院大学コミュニティ人間科学部</li>
-					<li>立教大学GLAP</li>
-					<li>立教大学現代心理学部</li>
-					<li>立教大学文学部</li>
-					<li>立教大学異文化コミュニケーション学部</li>
-					<li>中央大学文学部</li>
-					<li>中央大学国際経営学部</li>
-					<li>法政大学キャリアデザイン学部</li>
-					<li>法政大学人間環境学部</li>
-					<li>法政大学国際文化学部</li>
-					<li>立命館大学文学部</li>
-					<li>立命館大学映像学部</li>
-					<li>立命館アジア太平洋大学国際経営学部</li>
-					<li>関西学院大学総合政策学部</li>
-					<li>津田塾大学総合政策学部</li>
-					<li>昭和女子大学グローバルビジネス学部</li>
-					<li>明治学院大学社会学部</li>
-					<li>成城大学社会イノベーション学部</li>
-					<li>東京都市大学人間科学部</li>
-				</ul>
+				<article class="m-auto flex justify-center gap-5 text-left my-6 p-6 w-90p border">
+					<ul>
+						<li>慶應義塾大学総合政策学部</li>
+						<li>慶應義塾大学環境情報学部</li>
+						<li>慶應義塾大学法学部</li>
+						<li>慶應義塾大学文学部</li>
+						<li>早稲田大学文化構想学部</li>
+						<li>上智大学国際教養学部</li>
+						<li>国際基督教大学教養学部</li>
+						<li>学習院大学文学部</li>
+						<li>明治大学文学部</li>
+						<li>明治大学農学部</li>
+					</ul>
+					<ul>
+						<li>青山学院大学コミュニティ人間科学部</li>
+						<li>立教大学GLAP</li>
+						<li>立教大学現代心理学部</li>
+						<li>立教大学文学部</li>
+						<li>立教大学異文化コミュニケーション学部</li>
+						<li>中央大学文学部</li>
+						<li>中央大学国際経営学部</li>
+						<li>法政大学キャリアデザイン学部</li>
+						<li>法政大学人間環境学部</li>
+						<li>法政大学国際文化学部</li>
+					</ul>
+					<ul>
+						<li>立命館大学文学部</li>
+						<li>立命館大学映像学部</li>
+						<li>立命館アジア太平洋大学国際経営学部</li>
+						<li>関西学院大学総合政策学部</li>
+						<li>津田塾大学総合政策学部</li>
+						<li>昭和女子大学グローバルビジネス学部</li>
+						<li>明治学院大学社会学部</li>
+						<li>成城大学社会イノベーション学部</li>
+						<li>東京都市大学人間科学部</li>
+					</ul>
+				</article>
 			</section>
+		</article>
+	</section>
+	<section class="c-background--experience flex justify-center items-center relative">
+		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+			<h2 class="c-title-silver lg:top-28 tracking-5">EXPERIENCE</h2>
+			<p class="c-title-silver__sub">合格体験記</p>
+		</div>
+		<article class="flex gap-5 flex-col lg:flex-row pt-56 mb-32">
+			<section class="w-484px bg-white drop-shadow">
+				<div class="c-background--silver flex items-center mx-5 mt-5">
+					<figure class="py-1.5 px-6">
+						<figcaption>
+							<img src="<?php echo $path_Asan_png ?>" alt="合格者の画像">
+						</figcaption>
+						<p class="text-center text-xs">Aさん</p>
+					</figure>
+					<h3>
+						慶應義塾大学総合政策学部<br>
+						AO入試合格
+					</h3>
+				</div>
+				<p class="pt-3.5 px-5">
+					高校1年生のときから部活動一色で、いざ総合型選抜にチャレンジしようとしたときには志望理由書などで必要な素材が全くないことに気づき、どうしようかと思っていました。そうしたときにカンザキジュクに相談に行き、入塾することにしました。毎回の授業で問われるものは、いままで考えたこともないような世界や社会の問題で、調べ学習やディスカッションを重ねながら、色々な教養が身についたと思います。また、大学が求める人物像にあった経験が必要だと気づき、探究・研究活動も一緒にやりました。ジュクに入って、コンテストに出場して実績も得られたし、論理性や表現力が身につきました。そして、第一志望の大学に合格することができました。一人では難しいことも、ジュクでならできました。カンザキジュクに行くなら、部活動をやりながらでも大丈夫です！
+				</p>
+			</section>
+			<section class="bg-white w-484px h-589px drop-shadow-lg">
+				<div class="c-background--silver flex items-center mx-5 mt-5">
+					<figure class="py-1.5 px-6">
+						<figcaption>
+							<img src="<?php echo $path_Bsan_png ?>" alt="合格者の画像">
+						</figcaption>
+						<p class="text-center text-xs">Bさん</p>
+					</figure>
+					<h3>
+						早稲田大学文化構想学部<br>
+						地域探究・貢献入試合格
+					</h3>
+				</div>
+				<p class="pt-3.5 px-5">
+					高校の頃からさまざまな資格や留学経験を重ねてきました。そうした経験をうまく活かすことができないかと考え、総合型や学校推薦型選抜を検討していたところ、学習参考書やスタディサプリで有名な神﨑先生の塾に出会いました。特に志望理由書については話が混乱して整理できていなかったのですが、先生方との対話でストーリーが明確になり、自分にはない発想がうまれます。さらに「こういう表現をすると、キミの良さが生かせそうだね」と提案してくださるので、自信を持って自分の志望理由をアピールすることができました。小論文も、最初は論理性が破綻して、妄想で文章を書いていたり、曖昧な表現で「逃げて」いたのですが、答案の内容を先生と一緒に議論することで、足りない知識を補ったり、内容を修正していったりする中で、徐々に力がついていきました。入試前には発展的な議論ができるくらいまで成長し、堂々と答案を書くことができました。カンザキジュクは「本物」の力を身につけさせてくれる塾だと思います。ありがとうございました。
+				</p>
+			</section>
+		</article>
+	</section>
+	<section class="relative h-screen flex items-center justify-center">
+		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+			<h2 class="c-title-silver lg:top-28 tracking-5">EXPERIENCE</h2>
+			<p class="c-title-silver__sub">合格体験記</p>
+		</div>
+		<article class="p-form--wrapper">
+			<h3 class="pt-15 text-center text-2xl font-medium">気づいたときが、はじめどきです。</h3>
+			<p class="pt-5 text-center">
+			小論文（総合型・学校推薦型選抜）で志望校の合格を目指すなら、<br>カンザキジュクまでお気軽にお問い合わせください。
+			</p>
+			<?php echo do_shortcode('[contact-form-7 id="f3e56bf" title="Contact form 1"]'); ?>
 		</article>
 	</section>
 </main>

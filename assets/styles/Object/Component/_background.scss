@@ -16,6 +16,10 @@
 
   &--silver {
     background: linear-gradient(180deg, #CDCDCD 0%, #FFFFFF 52.08%, #CDCDCD 98.44%);
+  }
 
+  &--experience {
+    background: url($base-dir + 'images/background-experience.jpg') bottom no-repeat;
+    background-size: cover;
   }
 }
