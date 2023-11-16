@@ -77,6 +77,9 @@ module.exports = {
       },
       minHeight: {
         '288': '288px',
+      },
+      lineHeight: {
+        '11': '3rem', 
       }
     },
   },

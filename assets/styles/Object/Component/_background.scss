@@ -1,3 +1,5 @@
+@use "../../Foundation/index" as *;
+
 .c-background {
   &--main-visual {
     background: url($base-dir + 'images/main-visual.jpg') bottom no-repeat;
@@ -16,6 +18,10 @@
 
   &--silver {
     background: linear-gradient(180deg, #CDCDCD 0%, #FFFFFF 52.08%, #CDCDCD 98.44%);
+  }
+
+  &--gold {
+    background: $gold;
   }
 
   &--experience {

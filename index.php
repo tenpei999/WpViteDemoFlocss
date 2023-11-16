@@ -10,16 +10,13 @@ function get_image_path($file_name, $extension = 'png')
 	return $full_path;
 }
 
-$path_82per = get_image_path('82per');
-$path_90per = get_image_path('90per');
-$path_girl = get_image_path('girl');
-$path_boy = get_image_path('boy');
 $path_82per_png = get_image_path('82per', 'png');
 $path_90per_png = get_image_path('90per', 'png');
 $path_girl_png = get_image_path('girl', 'png');
 $path_boy_png = get_image_path('boy', 'png');
 $path_Asan_png = get_image_path('Asan', 'png');
 $path_Bsan_png = get_image_path('Bsan', 'png');
+$path_kanzaki_png = get_image_path('kanzaki', 'png');
 ?>
 <main>
 	<section class="c-background--main-visual w-screen h-screen flex items-center justify-center">
@@ -273,21 +270,42 @@ $path_Bsan_png = get_image_path('Bsan', 'png');
 			<?php echo do_shortcode('[contact-form-7 id="f3e56bf" title="Contact form 1"]'); ?>
 		</article>
 	</section>
-	<section>
+	<section class="relative flex justify-center">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
-			<h2 class="c-title-silver lg:top-28 tracking-5">CONTACT</h2>
-			<p class="c-title-silver__sub">お問い合わせ</p>
+			<h2 class="c-title-silver lg:top-28 tracking-5">SNS</h2>
+			<p class="c-title-silver__sub">instagram</p>
 		</div>
-		<article>
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</ul>
-		</article>
+		<ul class="py-32 flex justify-center items-center gap-5 flex-wrap p-sns__post">
+			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
+			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
+			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
+			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
+			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
+			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
+		</ul>
+	</section>
+	<section class="c-background--silver flex justify-center items-center relative">
+		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+			<h2 class="c-title-silver lg:top-28 tracking-5">PROFFILE</h2>
+			<p class="c-title-silver__sub">塾長プロフィール</p>
+		</div>
+		<div class="flex pt-32 pb-36">
+			<figure class="w-80 flex flex-col">
+				<figcaption>
+					<img src="<?php echo $path_kanzaki_png ?>" alt="" width="315px" height="312px">
+				</figcaption>
+				<h3 class="text-center font-kozuka text-2xl font-bold leading-11">神﨑 史彦</h3>
+				<p class="text-center">Fumihiko Kanzaki</p>
+			</figure>
+			<p class="w-484px leading-7 tracking-wider text-justify">1978年、新潟に生まれ、横浜にて育つ。大学卒業後、小中学生対象の学習塾講師を経て予備校講師となる。2013年に東進ハイスクール講師オーディションに合格。同予備校の小論文講師を経て、2021年よりリクルート・スタディサプリ講師となる（総合型選抜・小論文・探究）。これまでに多数の学習参考書を執筆、書籍で発信している“カンザキメソッド“は全国の高校・塾・予備校の小論文（総合型選抜）対策の礎となっている。阪大アドミッション・オフィサー育成プログラム（大阪大学ステューデント・ライフサイクル・サポートセンター主催）を修了するなど、大学の入試担当者の眼差しを持つ数少ない予備校講師でもある。慶應義塾大学大学院政策・メディア研究科（修士課程）へ入学。専門分野は臨床教育学・Project Based Learning。</p>
+		</div>
+	</section>
+	<section class="flex relative justify-center items-center">
+		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+			<h2 class="c-title-silver lg:top-28 tracking-5">ACCESS</h2>
+			<p class="c-title-silver__sub">アクセス</p>
+		</div>
+		<iframe class="my-32" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.9072242222035!2d139.62581454921673!3d35.61704455226229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5d645545c29%3A0xd0ffc9b81f296026!2zR3JhbkR1b-S6jOWtkOeOieW3nTU!5e0!3m2!1sja!2sjp!4v1700151400152!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</section>
 </main>
 <?php get_footer(); ?>
