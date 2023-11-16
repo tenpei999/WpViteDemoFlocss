@@ -261,15 +261,32 @@ $path_Bsan_png = get_image_path('Bsan', 'png');
 	</section>
 	<section class="relative h-screen flex items-center justify-center">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
-			<h2 class="c-title-silver lg:top-28 tracking-5">EXPERIENCE</h2>
-			<p class="c-title-silver__sub">合格体験記</p>
+			<h2 class="c-title-silver lg:top-28 tracking-5">CONTACT</h2>
+			<p class="c-title-silver__sub">お問い合わせ</p>
 		</div>
-		<article class="p-form--wrapper">
-			<h3 class="pt-15 text-center text-2xl font-medium">気づいたときが、はじめどきです。</h3>
+		<article class="p-contact__wrapper">
+			<h3 class="pt-15 text-center text-2xl font-medium">気づいたときが、<span class="p-contact__accent">は</span><span class="p-contact__accent">じ</span><span class="p-contact__accent">め</span><span class="p-contact__accent">ど</span><span class="p-contact__accent">き</span>です。
+			</h3>
 			<p class="pt-5 text-center">
-			小論文（総合型・学校推薦型選抜）で志望校の合格を目指すなら、<br>カンザキジュクまでお気軽にお問い合わせください。
+				小論文（総合型・学校推薦型選抜）で志望校の合格を目指すなら、<br>カンザキジュクまでお気軽にお問い合わせください。
 			</p>
 			<?php echo do_shortcode('[contact-form-7 id="f3e56bf" title="Contact form 1"]'); ?>
+		</article>
+	</section>
+	<section>
+		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+			<h2 class="c-title-silver lg:top-28 tracking-5">CONTACT</h2>
+			<p class="c-title-silver__sub">お問い合わせ</p>
+		</div>
+		<article>
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
 		</article>
 	</section>
 </main>
