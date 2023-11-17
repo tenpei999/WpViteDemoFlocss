@@ -122,18 +122,18 @@
 			</div>
 		</article>
 	</section>
-	<section class="c-background--silver flex text-center items-center justify-center relative pt-32 pb-32">
-		<img class="absolute left-0 bottom-0" src="<?php echo do_shortcode('[image_path name="girl" extension="png"]') ?>" alt="女子生徒の画像">
-		<img class="absolute right-0 -bottom-4" src="<?php echo do_shortcode('[image_path name="boy" extension="png"]') ?>" alt="男子生徒の画像">
+	<section class="c-background--silver flex text-center items-center justify-center relative md:pt-32 pb-12 mb:pb-32">
+		<img class="absolute left-0 bottom-0 hidden lg:block" src="<?php echo do_shortcode('[image_path name="girl" extension="png"]') ?>" alt="女子生徒の画像">
+		<img class="absolute hidden lg:block right-0 bottom-4" src="<?php echo do_shortcode('[image_path name="boy" extension="png"]') ?>" alt="男子生徒の画像">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver tracking-3">RESULTS</h2>
 			<p class="c-title-silver__sub">合格実績</p>
 		</div>
-		<article class="w-60p h-60p bg-white">
+		<article class="w-full md:w-90p lg:w-60p h-60p bg-white">
 			<section>
-				<h3 class="c-title-gold inline-block mt-16 py-2.5 px-4 text-2xl">カンザキジュクの合格率</h3>
-				<div class="flex gap-7 pt-5 px-14">
-					<div class="flex justify-center w-6/12">
+				<h3 class="c-title-gold inline-block mt-48 md:mt-16 py-2.5 px-4 text-2xl">カンザキジュクの合格率</h3>
+				<div class="flex flex-col md:flex-row gap-7 pt-5 px-14">
+					<div class="flex justify-center lg:w-6/12">
 						<figure class="w-40p flex flex-col">
 							<figcaption><img src="<?php echo do_shortcode('[image_path name="82per" extension="png"]') ?>" class="m-auto" alt=""></figcaption>
 							<p>1次選考合格率</p>
@@ -143,7 +143,7 @@
 							<p>最終合格率</p>
 						</figure>
 					</div>
-					<p class="w-6/12 text-left">
+					<p class=" lg:w-6/12 text-left">
 						これまで82%の生徒を最終合格まで導いてきました。1次選考までかぎって言えば、90%を超えています。その高い合格実績を出すことができているのは、生徒の思いを大事に育てていく「カンザキメソッド」にあります。対話を通して、探究を進め、それを元に各大学の研究者に向けてどんなメッセージを発するのか。そこを一緒に作り上げていきます。
 					</p>
 				</div>
@@ -155,7 +155,7 @@
 				<p class="pt-6">
 					早稲田大学・慶應義塾大学・上智大学をはじめ、多くの難関大学合格者を輩出しています。
 				</p>
-				<article class="m-auto flex justify-center gap-5 text-left my-6 p-6 w-90p border">
+				<article class="m-auto flex flex-wrap justify-start xl:justify-center gap-x-16 gap-y-5 xl:gap-5 text-left my-6 p-6 w-90p border">
 					<ul>
 						<li>慶應義塾大学総合政策学部</li>
 						<li>慶應義塾大学環境情報学部</li>
@@ -237,7 +237,7 @@
 			</section>
 		</article>
 	</section>
-	<section class="relative h-screen flex items-center justify-center">
+	<section class="relative flex items-center justify-center pt-64">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">CONTACT</h2>
 			<p class="c-title-silver__sub">お問い合わせ</p>
@@ -270,7 +270,7 @@
 			<h2 class="c-title-silver lg:top-28 tracking-5">PROFFILE</h2>
 			<p class="c-title-silver__sub">塾長プロフィール</p>
 		</div>
-		<div class="flex pt-32 pb-36">
+		<div class="flex flex-col md:flex-row pt-32 pb-36">
 			<figure class="w-80 flex flex-col">
 				<figcaption>
 					<img src="<?php echo do_shortcode('[image_path name="kanzaki" extension="png"]') ?>" alt="" width="315px" height="312px">

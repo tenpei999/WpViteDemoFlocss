@@ -6,7 +6,7 @@
       <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
     </a>
   </nav>
-  <div class="flex justify-between">
+  <div class="flex flex-col lg:flex-row justify-between">
     <address>
       〒158-0094<br>
       東京都世田谷区玉川4丁目12-15<br>
