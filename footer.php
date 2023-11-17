@@ -1,15 +1,9 @@
-<?php
-$template_directory_uri = get_template_directory_uri();
-$logo_footer_img_path = '/assets/images/logo-header.png?';
-$logo_footer_path = $template_directory_uri . $logo_footer_img_path . filemtime(get_template_directory() . $logo_header_img_path);
-?>
-
 </main>
 
 <footer class="c-background--gold py-9  px-30">
   <nav class="footer-logo">
     <a href="#">
-      <img src="<?php echo $logo_footer_path ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
+      <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
     </a>
   </nav>
   <div class="flex">
@@ -21,7 +15,11 @@ $logo_footer_path = $template_directory_uri . $logo_footer_img_path . filemtime(
       (<time datetime="13:00">平日13:00</time>～<time datetime="17:00">17:00</time>)
     </address>
     <ul>
-      <li><a href=""></a></li>
+      <li>
+        <a href="">
+          <img src="" alt="">
+        </a>
+      </li>
       <li><a href=""></a></li>
       <li><a href=""></a></li>
       <li><a href=""></a></li>

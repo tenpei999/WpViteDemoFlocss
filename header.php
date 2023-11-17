@@ -1,9 +1,3 @@
-<?php
-$template_directory_uri = get_template_directory_uri();
-$logo_header_img_path = '/assets/images/logo-header.png?';
-$logo_header_path = $template_directory_uri . $logo_header_img_path . filemtime(get_template_directory() . $logo_header_img_path);
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -17,10 +11,10 @@ $logo_header_path = $template_directory_uri . $logo_header_img_path . filemtime(
 </head>
 
 <body class="font-noto-sans">
-  <header class="header fixed w-screen flex justify-around z-10">
+  <header class="header fixed w-screen flex justify-around">
     <nav class="header-logo mt-5">
       <a href="#">
-        <img src="<?php echo $logo_header_path ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
+        <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
       </a>
     </nav>
     <nav class="flex flex-col mt-5">

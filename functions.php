@@ -120,8 +120,24 @@ function readScript()
 }
 add_action('wp_enqueue_scripts', 'readScript');
 
-function my_theme_setup()
+$template_directory_uri = get_template_directory_uri();
+
+function get_image_path($file_name, $extension = 'png')
 {
-	require_once(get_template_directory() . '/variables.php');
+	global $template_directory_uri;
+	$img_path = "/assets/images/{$file_name}.{$extension}?";
+	$full_path = $template_directory_uri . $img_path . filemtime(get_template_directory() . $img_path);
+	return $full_path;
 }
-add_action('after_setup_theme', 'my_theme_setup');
+
+// ショートコードを追加する関数
+function get_image_path_shortcode($atts)
+{
+	// ショートコードの属性を解析
+	$file_name = $atts['name'] ?? 'default';
+	$extension = $atts['extension'] ?? 'png';
+
+	// 画像パスを取得
+	return get_image_path($file_name, $extension);
+}
+add_shortcode('image_path', 'get_image_path_shortcode');

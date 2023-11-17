@@ -1,23 +1,4 @@
-<?php
-get_header();
-$template_directory_uri = get_template_directory_uri();
-
-function get_image_path($file_name, $extension = 'png')
-{
-	global $template_directory_uri; // グローバル変数を関数内で使う宣言
-	$img_path = "/assets/images/{$file_name}.{$extension}?";
-	$full_path = $template_directory_uri . $img_path . filemtime(get_template_directory() . $img_path);
-	return $full_path;
-}
-
-$path_82per_png = get_image_path('82per', 'png');
-$path_90per_png = get_image_path('90per', 'png');
-$path_girl_png = get_image_path('girl', 'png');
-$path_boy_png = get_image_path('boy', 'png');
-$path_Asan_png = get_image_path('Asan', 'png');
-$path_Bsan_png = get_image_path('Bsan', 'png');
-$path_kanzaki_png = get_image_path('kanzaki', 'png');
-?>
+<?php get_header();?>
 <main>
 	<section class="c-background--main-visual w-screen h-screen flex items-center justify-center">
 		<ul class="w-7/12 flex flex-col items-center justify-center text-white">
@@ -142,8 +123,8 @@ $path_kanzaki_png = get_image_path('kanzaki', 'png');
 		</article>
 	</section>
 	<section class="c-background--silver flex text-center items-center justify-center relative pt-32 pb-32">
-		<img class="absolute left-0 bottom-0" src="<?php echo $path_girl_png ?>" alt="女子生徒の画像">
-		<img class="absolute right-0 -bottom-4" src="<?php echo $path_boy_png ?>" alt="男子生徒の画像">
+		<img class="absolute left-0 bottom-0" src="<?php echo do_shortcode('[image_path name="girl" extension="png"]') ?>" alt="女子生徒の画像">
+		<img class="absolute right-0 -bottom-4" src="<?php echo do_shortcode('[image_path name="boy" extension="png"]') ?>" alt="男子生徒の画像">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver tracking-3">RESULTS</h2>
 			<p class="c-title-silver__sub">合格実績</p>
@@ -154,11 +135,11 @@ $path_kanzaki_png = get_image_path('kanzaki', 'png');
 				<div class="flex gap-7 pt-5 px-14">
 					<div class="flex justify-center w-6/12">
 						<figure class="w-40p flex flex-col">
-							<figcaption><img src="<?php echo $path_82per_png ?>" class="m-auto" alt=""></figcaption>
+							<figcaption><img src="<?php echo do_shortcode('[image_path name="82per" extension="png"]') ?>" class="m-auto" alt=""></figcaption>
 							<p>1次選考合格率</p>
 						</figure>
 						<figure class="w-40p flex flex-col">
-							<figcaption><img src="<?php echo $path_90per_png ?>" class="m-auto" alt=""></figcaption>
+							<figcaption><img src="<?php echo do_shortcode('[image_path name="90per" extension="png"]') ?>" class="m-auto" alt=""></figcaption>
 							<p>最終合格率</p>
 						</figure>
 					</div>
@@ -224,7 +205,7 @@ $path_kanzaki_png = get_image_path('kanzaki', 'png');
 				<div class="c-background--silver flex items-center mx-5 mt-5">
 					<figure class="py-1.5 px-6">
 						<figcaption>
-							<img src="<?php echo $path_Asan_png ?>" alt="合格者の画像">
+							<img src="<?php echo do_shortcode('[image_path name="Asan" extension="png"]') ?>" alt="合格者の画像">
 						</figcaption>
 						<p class="text-center text-xs">Aさん</p>
 					</figure>
@@ -241,7 +222,7 @@ $path_kanzaki_png = get_image_path('kanzaki', 'png');
 				<div class="c-background--silver flex items-center mx-5 mt-5">
 					<figure class="py-1.5 px-6">
 						<figcaption>
-							<img src="<?php echo $path_Bsan_png ?>" alt="合格者の画像">
+							<img src="<?php echo do_shortcode('[image_path name="Bsan" extension="png"]') ?>" alt="合格者の画像">
 						</figcaption>
 						<p class="text-center text-xs">Bさん</p>
 					</figure>
@@ -292,7 +273,7 @@ $path_kanzaki_png = get_image_path('kanzaki', 'png');
 		<div class="flex pt-32 pb-36">
 			<figure class="w-80 flex flex-col">
 				<figcaption>
-					<img src="<?php echo $path_kanzaki_png ?>" alt="" width="315px" height="312px">
+					<img src="<?php echo do_shortcode('[image_path name="kanzaki" extension="png"]') ?>" alt="" width="315px" height="312px">
 				</figcaption>
 				<h3 class="text-center font-kozuka text-2xl font-bold leading-11">神﨑 史彦</h3>
 				<p class="text-center">Fumihiko Kanzaki</p>
