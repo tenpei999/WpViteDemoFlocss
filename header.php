@@ -30,25 +30,28 @@
     </article>
     <ul class="c-background--silver p-nav__body">
       <li class="menu">
-        <a href="#">カンザキジュクの特徴</a>
+        <a href="#features">カンザキジュクの特徴</a>
       </li>
       <li class="menu">
-        <a href="#">指導指針</a>
+        <a href="#policy">指導指針</a>
       </li>
       <li class="menu">
-        <a href="#">合格体験記</a>
+        <a href="#results">合格実績</a>
       </li>
       <li class="menu">
-        <a href="#">お問い合わせ</a>
+        <a href="#experience">合格体験記</a>
       </li>
       <li class="menu">
-        <a href="#">Instagram</a>
+        <a href="#contact">お問い合わせ</a>
       </li>
       <li class="menu">
-        <a href="#">塾長プロフィール</a>
+        <a href="#sns">Instagram</a>
       </li>
       <li class="menu">
-        <a href="#">アクセス</a>
+        <a href="#profile">塾長プロフィール</a>
+      </li>
+      <li class="menu">
+        <a href="#access">アクセス</a>
       </li>
     </ul>
   </header>

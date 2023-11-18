@@ -27,7 +27,7 @@
 			<p class="c-title-silver__sub">カンザキジュクの特徴</p>
 		</div>
 		<div class="p-features__wrapper w-full md:w-90p lg:w-70p flex flex-col justify-center items-center text-center">
-			<section class="pt-32 justify-center lg:w-80p">
+			<section  id="features" class="pt-32 justify-center lg:w-80p">
 				<h3 class="c-title-gold inline-block py-2.5 px-4 text-2xl">What’sカンザキジュク</h3>
 				<h4 class="pt-6 text-xl font-medium">
 					小論文（総合型・学校推薦型選抜）対策に欠かせない「思考を育てる」学習塾。
@@ -86,7 +86,7 @@
 				<p class="c-title-silver__sub">指導指針</p>
 			</div>
 		</div>
-		<article class="c-background--policy absolute flex  flex-col lg:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
+		<article  id="policy" class="c-background--policy absolute flex  flex-col lg:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
 			<ul class="p-policy__list">
 				<li class="pt-4 md:pt-0">
 					<button class="c-button--gold w-full">
@@ -122,7 +122,7 @@
 			</div>
 		</article>
 	</section>
-	<section class="c-background--silver flex text-center items-center justify-center relative md:pt-32 pb-12 mb:pb-32">
+	<section id="results" class="c-background--silver flex text-center items-center justify-center relative md:pt-32 pb-12 mb:pb-32">
 		<img class="absolute left-0 bottom-0 hidden lg:block" src="<?php echo do_shortcode('[image_path name="girl" extension="png"]') ?>" alt="女子生徒の画像">
 		<img class="absolute hidden lg:block right-0 bottom-4" src="<?php echo do_shortcode('[image_path name="boy" extension="png"]') ?>" alt="男子生徒の画像">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
@@ -195,7 +195,7 @@
 			</section>
 		</article>
 	</section>
-	<section class="c-background--experience flex justify-center items-center relative">
+	<section id="experience" class="c-background--experience flex justify-center items-center relative">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">EXPERIENCE</h2>
 			<p class="c-title-silver__sub">合格体験記</p>
@@ -237,7 +237,7 @@
 			</section>
 		</article>
 	</section>
-	<section class="relative flex items-center justify-center pt-64">
+	<section id="contact" class="relative flex items-center justify-center pt-64">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">CONTACT</h2>
 			<p class="c-title-silver__sub">お問い合わせ</p>
@@ -251,7 +251,7 @@
 			<?php echo do_shortcode('[contact-form-7 id="f3e56bf" title="Contact form 1"]'); ?>
 		</article>
 	</section>
-	<section class="relative flex justify-center">
+	<section id="sns" class="relative flex justify-center">
 		<div class="flex flex-col absolute left-5vw top-6 xl:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">SNS</h2>
 			<p class="c-title-silver__sub">instagram</p>
@@ -265,7 +265,7 @@
 			<li class="bg-neutral-400 w-72 h-72"><a href=""></a></li>
 		</ul>
 	</section>
-	<section class="c-background--silver flex justify-center items-center relative">
+	<section id="profile" class="c-background--silver flex justify-center items-center relative">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">PROFFILE</h2>
 			<p class="c-title-silver__sub">塾長プロフィール</p>
@@ -281,7 +281,7 @@
 			<p class="md:w-484px p-4 md:p-0 leading-7 tracking-wider text-justify">1978年、新潟に生まれ、横浜にて育つ。大学卒業後、小中学生対象の学習塾講師を経て予備校講師となる。2013年に東進ハイスクール講師オーディションに合格。同予備校の小論文講師を経て、2021年よりリクルート・スタディサプリ講師となる（総合型選抜・小論文・探究）。これまでに多数の学習参考書を執筆、書籍で発信している“カンザキメソッド“は全国の高校・塾・予備校の小論文（総合型選抜）対策の礎となっている。阪大アドミッション・オフィサー育成プログラム（大阪大学ステューデント・ライフサイクル・サポートセンター主催）を修了するなど、大学の入試担当者の眼差しを持つ数少ない予備校講師でもある。慶應義塾大学大学院政策・メディア研究科（修士課程）へ入学。専門分野は臨床教育学・Project Based Learning。</p>
 		</div>
 	</section>
-	<section class="flex relative justify-center items-center">
+	<section id="access" class="flex relative justify-center items-center">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">ACCESS</h2>
 			<p class="c-title-silver__sub">アクセス</p>
