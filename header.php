@@ -11,19 +11,44 @@
 </head>
 
 <body class="font-noto-sans">
-  <header class="header fixed z-10 w-screen flex justify-around">
-    <nav class="header-logo mt-5">
+  <header class="p-header fixed z-10 w-screen">
+    <nav class="c-logo mt-5">
       <a href="#">
         <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
       </a>
     </nav>
-    <nav class="flex flex-col mt-5">
-      <div class="c-button-square">
-        <div class="c-button-square__square"></div>
-        <div class="c-button-square__square"></div>
-        <div class="c-button-square__square"></div>
-        <div class="c-button-square__square"></div>
-      </div>
-      <P>menu</P>
-    </nav>
+    <article class="p-nav">
+      <nav class="p-nav__button js-hamburger">
+        <div class="c-button-square">
+          <div class="c-button-square__square"></div>
+          <div class="c-button-square__square"></div>
+          <div class="c-button-square__square"></div>
+          <div class="c-button-square__square"></div>
+        </div>
+        <P class="c-button-square__name">menu</P>
+      </nav>
+    </article>
+    <ul class="c-background--silver p-nav__body">
+      <li class="menu">
+        <a href="#">カンザキジュクの特徴</a>
+      </li>
+      <li class="menu">
+        <a href="#">指導指針</a>
+      </li>
+      <li class="menu">
+        <a href="#">合格体験記</a>
+      </li>
+      <li class="menu">
+        <a href="#">お問い合わせ</a>
+      </li>
+      <li class="menu">
+        <a href="#">Instagram</a>
+      </li>
+      <li class="menu">
+        <a href="#">塾長プロフィール</a>
+      </li>
+      <li class="menu">
+        <a href="#">アクセス</a>
+      </li>
+    </ul>
   </header>
