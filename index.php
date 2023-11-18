@@ -12,7 +12,7 @@
 				<p class="c-catchphrase__sub pt-7 text-2xl">多数の学習参考書を執筆し、リクルート・スタディサプリ講師を務める代表・神﨑史彦が監修・指導する小論文塾（総合型・学校推薦型選抜対策塾）です。</p>
 			</li>
 			<li>
-				<button class="c-button--gold mt-8 flex">
+				<button class="c-button--gold mt-12 md:mt-10 lg:mt-8 flex">
 					<a href="#" class="block py-4 px-8 md:px-16 leading-8 font-kozuka">
 						入塾希望の方はこちら
 					</a>
@@ -41,7 +41,7 @@
 				<p class="w-65p text-justify text-base pt-6">
 					「未来を切り開く主体的な人材を育むこと」を理念におき、「何のために大学で学ぶのか」「何を学ぶのか」「その学びをどう社会に還元するのか」を自分事として考え抜ける志の高い高校生を育てます。
 				</p>
-				<ul class="flex flex-col md:flex-row gap-5 md:gap-6 pt-12 px-2.5 md:px-0 mb-32">
+				<ul class="flex flex-col lg:flex-row gap-5 md:gap-6 pt-12 px-2.5 md:px-0 mb-32">
 					<li class="block bg-white c-card--ability">
 						<div class="c-card--ability__num-box">
 							<p>01</p>
@@ -86,7 +86,7 @@
 				<p class="c-title-silver__sub">指導指針</p>
 			</div>
 		</div>
-		<article class="c-background--policy absolute flex  flex-col md:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
+		<article class="c-background--policy absolute flex  flex-col lg:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
 			<ul class="p-policy__list">
 				<li class="pt-4 md:pt-0">
 					<button class="c-button--gold w-full">
@@ -117,7 +117,7 @@
 					</button>
 				</li>
 			</ul>
-			<div id="white-space" class="bg-white w-80p mb-8 md:mb-0 mt-8 md:mt-0 md:w-40p h-90p">
+			<div id="white-space" class="c-white-space bg-white h-auto w-80p mb-8 md:mb-0 mt-8 md:mt-0 md:w-40p">
 				<span></span>
 			</div>
 		</article>
@@ -252,7 +252,7 @@
 		</article>
 	</section>
 	<section class="relative flex justify-center">
-		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
+		<div class="flex flex-col absolute left-5vw top-6 xl:top-28">
 			<h2 class="c-title-silver lg:top-28 tracking-5">SNS</h2>
 			<p class="c-title-silver__sub">instagram</p>
 		</div>
@@ -271,14 +271,14 @@
 			<p class="c-title-silver__sub">塾長プロフィール</p>
 		</div>
 		<div class="flex flex-col md:flex-row pt-32 pb-36">
-			<figure class="w-80 flex flex-col">
+			<figure class="w-80 m-auto flex flex-col">
 				<figcaption>
 					<img src="<?php echo do_shortcode('[image_path name="kanzaki" extension="png"]') ?>" alt="" width="315px" height="312px">
 				</figcaption>
 				<h3 class="text-center font-kozuka text-2xl font-bold leading-11">神﨑 史彦</h3>
 				<p class="text-center">Fumihiko Kanzaki</p>
 			</figure>
-			<p class="md:w-484px leading-7 tracking-wider text-justify">1978年、新潟に生まれ、横浜にて育つ。大学卒業後、小中学生対象の学習塾講師を経て予備校講師となる。2013年に東進ハイスクール講師オーディションに合格。同予備校の小論文講師を経て、2021年よりリクルート・スタディサプリ講師となる（総合型選抜・小論文・探究）。これまでに多数の学習参考書を執筆、書籍で発信している“カンザキメソッド“は全国の高校・塾・予備校の小論文（総合型選抜）対策の礎となっている。阪大アドミッション・オフィサー育成プログラム（大阪大学ステューデント・ライフサイクル・サポートセンター主催）を修了するなど、大学の入試担当者の眼差しを持つ数少ない予備校講師でもある。慶應義塾大学大学院政策・メディア研究科（修士課程）へ入学。専門分野は臨床教育学・Project Based Learning。</p>
+			<p class="md:w-484px p-4 md:p-0 leading-7 tracking-wider text-justify">1978年、新潟に生まれ、横浜にて育つ。大学卒業後、小中学生対象の学習塾講師を経て予備校講師となる。2013年に東進ハイスクール講師オーディションに合格。同予備校の小論文講師を経て、2021年よりリクルート・スタディサプリ講師となる（総合型選抜・小論文・探究）。これまでに多数の学習参考書を執筆、書籍で発信している“カンザキメソッド“は全国の高校・塾・予備校の小論文（総合型選抜）対策の礎となっている。阪大アドミッション・オフィサー育成プログラム（大阪大学ステューデント・ライフサイクル・サポートセンター主催）を修了するなど、大学の入試担当者の眼差しを持つ数少ない予備校講師でもある。慶應義塾大学大学院政策・メディア研究科（修士課程）へ入学。専門分野は臨床教育学・Project Based Learning。</p>
 		</div>
 	</section>
 	<section class="flex relative justify-center items-center">

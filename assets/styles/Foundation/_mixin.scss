@@ -6,6 +6,8 @@ $mq-breakpoints: (
 //タブレット
 'screen03': 1024px,
 //pc
+'screen04': 1280px,
+//pc
 );
 
 @mixin mq($breakpoint: screen01) {

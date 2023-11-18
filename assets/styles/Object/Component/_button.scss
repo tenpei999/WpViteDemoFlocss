@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 47px;
+
     &__square {
       width: 45%;
       padding-bottom: 45%;
@@ -13,7 +14,26 @@
       background-color: #ddd;
     }
   }
+
   &--gold {
+    text-align: center;
+    width: 80vw;
+    height: 5rem;
+
+    @include mq (screen02) {
+      width: 60vw;
+      height: 3rem;
+    }
+
+    @include mq (screen03) {
+      width: 100%;
+      height: unset;
+    }
+
+    a {
+      margin: auto;
+    }
+
     background: linear-gradient(90deg, #E5DE97 -16.73%, #735809 113.06%);
   }
 }
