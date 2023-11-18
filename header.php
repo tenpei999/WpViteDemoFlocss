@@ -11,7 +11,7 @@
 </head>
 
 <body class="font-noto-sans">
-  <header class="header fixed w-screen flex justify-around">
+  <header class="header fixed z-10 w-screen flex justify-around">
     <nav class="header-logo mt-5">
       <a href="#">
         <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">

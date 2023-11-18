@@ -1,3 +1,5 @@
+@use "./index" as *;
+
 .wpcf7-form input,
 .wpcf7-form textarea {
   border: 1px solid #000000;
@@ -7,10 +9,6 @@
 .wpcf7 {
   margin: auto;
   padding: 20px 50px 0 50px;
-
-  .flex {
-    p {}
-  }
 
   &-form {
 
@@ -24,13 +22,11 @@
 
       .item {
         &-name {
-          width: 170px;
+          @include mq (screen02) {
+            width: 170px;
+          }
         }
       }
-
-      >[type="text"],
-      >[type="number"],
-      >[type="email"] {}
     }
 
     .text-field {
@@ -38,7 +34,10 @@
     }
 
     input {
-      width: 521px;
+      width: 100%;
+      @include mq (screen02) {
+        width: 521px;
+      }
 
       &.wpcf7-submit {
         width: 224px;

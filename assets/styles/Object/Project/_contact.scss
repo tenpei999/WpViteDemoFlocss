@@ -2,8 +2,10 @@
 
 .p-contact {
   &__wrapper {
-    width: 788px;
     border: 0.5px solid $gold;
+    @include mq (screen02) {
+      width: 788px;
+    }
   }
   &__accent {
     position: relative;
