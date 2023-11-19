@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header(); ?>
 <main>
 	<section class="c-background--main-visual w-screen h-screen flex items-center justify-center">
 		<ul class="w-10/12  lg:w-7/12 flex flex-col items-center justify-center text-white">
@@ -9,7 +9,7 @@
 				</h1>
 			</li>
 			<li>
-				<p class="c-catchphrase__sub pt-7 text-2xl">多数の学習参考書を執筆し、リクルート・スタディサプリ講師を務める代表・神﨑史彦が監修・指導する小論文塾（総合型・学校推薦型選抜対策塾）です。</p>
+				<p class="c-catchphrase__sub pt-7 text-2xl">多数の学習参考書を執筆し、リクルート・スタディサプリ講師を務める代表・神﨑史彦が監修・指導する<span>小論文塾</span>（総合型・学校推薦型選抜対策塾）です。</p>
 			</li>
 			<li>
 				<button class="c-button--gold mt-12 md:mt-10 lg:mt-8 flex">
@@ -26,13 +26,13 @@
 			<h2 class="c-title-silver lg:top-28 tracking-5">FEATURES</h2>
 			<p class="c-title-silver__sub">カンザキジュクの特徴</p>
 		</div>
-		<div class="p-features__wrapper w-full md:w-90p lg:w-70p flex flex-col justify-center items-center text-center">
-			<section  id="features" class="pt-32 justify-center lg:w-80p">
+		<div class="p-features__wrapper w-full md:w-90p xl:w-70p flex flex-col justify-center items-center text-center">
+			<section id="features" class="pt-32 justify-center xl:w-80p">
 				<h3 class="c-title-gold inline-block py-2.5 px-4 text-2xl">What’sカンザキジュク</h3>
-				<h4 class="pt-6 text-xl font-medium">
+				<h4 class="pt-6 px-5 text-xl font-medium">
 					小論文（総合型・学校推薦型選抜）対策に欠かせない「思考を育てる」学習塾。
 				</h4>
-				<p class="text-justify pt-6 text-base">
+				<p class="text-justify pt-6 px-5 text-base">
 					弊塾は受講生一人ひとりとの対話を通し、本人の考えが及ばないレベルへの思考へと高めることを得意としています。答えは本人が持っています。私たちはそれを引き出し、対話（dialogue）を重ね、良き解をともにつくり上げていきます。それが、多数の難関大学合格者を弊塾が生み出せている大きなポイントです。深い思考へと誘う”対話”指導が圧倒的な合格実績につながっています。　
 				</p>
 			</section>
@@ -79,71 +79,72 @@
 			</section>
 		</div>
 	</section>
-	<section class=" h-140vh md:h-90vh relative p-policy">
+	<section class="h-120vh lg:h-90vh relative p-policy">
 		<div class="relative w-21p">
 			<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 				<h2 class="c-title-silver">POLICY</h2>
 				<p class="c-title-silver__sub">指導指針</p>
 			</div>
 		</div>
-		<article  id="policy" class="c-background--policy absolute flex  flex-col lg:flex-row items-center place-content-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
+		<article id="policy" class="c-background--policy absolute py-5 flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-0 lg:justify-around w-full md:w-90p lg:w-79p right-0 bottom-0 h-120vh md:h-4/5 lg:h-full">
 			<ul class="p-policy__list">
 				<li class="pt-4 md:pt-0">
-					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl c-clamp--1215 font-bold text-left">
+					<button id="1stAnd2ndYear" class="c-button--gold w-full">
+						<a href="#title-space" class="block py-2.5 px-5 leading-8 font-kozuka text-white text-2xl c-clamp--1215 font-bold text-left">
 							高１・２生
 						</a>
 					</button>
 				</li>
 				<li class="pt-4 md:pt-8">
-					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
+					<button id="EarlyThirdYear" class="c-button--gold w-full">
+						<a href="#title-space" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
 							高３成長期（4月〜）
 						</a>
 					</button>
 				</li>
 				<li class="pt-4 md:pt-8">
-					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
+					<button id="ImmediatePeriod" class="c-button--gold w-full">
+						<a href="#title-space" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
 							高３直前期（夏休み〜）
 						</a>
 					</button>
 				</li>
 				<li class="pt-4 md:pt-8">
-					<button class="c-button--gold w-full">
-						<a href="#" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
+					<button id="Advansed" class="c-button--gold w-full">
+						<a href="#title-space" class="block py-2.5 px-5 leading-8 font-kozuka text-white c-clamp--1215 font-bold text-left">
 							慶早ICU・GMARCH志望者
 						</a>
 					</button>
 				</li>
 			</ul>
-			<div id="white-space" class="c-white-space bg-white h-auto w-80p mb-8 md:mb-0 mt-8 md:mt-0 md:w-40p">
-				<span></span>
+			<div class="c-white-space bg-white h-auto w-80p mb-8 md:mb-0 mt-8 md:mt-0 lg:w-40p text-center">
+				<h3 id="title-space" class="c-border--gold inline-block  pt-11 text-xl"></h3>
+				<span id="white-space" class="inline-block py-5 px-8 text-left"></span>
 			</div>
 		</article>
 	</section>
-	<section id="results" class="c-background--silver flex text-center items-center justify-center relative md:pt-32 pb-12 mb:pb-32">
+	<section id="results" class="c-background--silver flex text-center items-center justify-center relative md:pt-32 pb-12 md:pb-32">
 		<img class="absolute left-0 bottom-0 hidden lg:block" src="<?php echo do_shortcode('[image_path name="girl" extension="png"]') ?>" alt="女子生徒の画像">
-		<img class="absolute hidden lg:block right-0 bottom-4" src="<?php echo do_shortcode('[image_path name="boy" extension="png"]') ?>" alt="男子生徒の画像">
+		<img class="absolute hidden lg:block right-0 -bottom-12 z-10" src="<?php echo do_shortcode('[image_path name="boy" extension="png"]') ?>" alt="男子生徒の画像">
 		<div class="flex flex-col absolute left-5vw top-6 lg:top-28">
 			<h2 class="c-title-silver tracking-3">RESULTS</h2>
 			<p class="c-title-silver__sub">合格実績</p>
 		</div>
-		<article class="w-full md:w-90p lg:w-60p h-60p bg-white">
+		<article class="w-full z-20 md:w-90p lg:w-60p h-60p bg-white">
 			<section>
 				<h3 class="c-title-gold inline-block mt-48 md:mt-16 py-2.5 px-4 text-2xl">カンザキジュクの合格率</h3>
-				<div class="flex flex-col md:flex-row gap-7 pt-5 px-14">
-					<div class="flex justify-center lg:w-6/12">
+				<div class="flex flex-col xl:flex-row gap-7 pt-5 px-14">
+					<div class="flex justify-center items-center gap-8 xl:w-6/12">
 						<figure class="w-40p flex flex-col">
-							<figcaption><img src="<?php echo do_shortcode('[image_path name="82per" extension="png"]') ?>" class="m-auto" alt=""></figcaption>
+							<figcaption><img src="<?php echo do_shortcode('[image_path name="90per" extension="png"]') ?>" class="m-auto scale-90" alt=""></figcaption>
 							<p>1次選考合格率</p>
 						</figure>
 						<figure class="w-40p flex flex-col">
-							<figcaption><img src="<?php echo do_shortcode('[image_path name="90per" extension="png"]') ?>" class="m-auto" alt=""></figcaption>
+							<figcaption><img src="<?php echo do_shortcode('[image_path name="82per" extension="png"]') ?>" class="m-auto scale-90" alt=""></figcaption>
 							<p>最終合格率</p>
 						</figure>
 					</div>
-					<p class=" lg:w-6/12 text-left">
+					<p class=" xl:w-6/12 text-left">
 						これまで82%の生徒を最終合格まで導いてきました。1次選考までかぎって言えば、90%を超えています。その高い合格実績を出すことができているのは、生徒の思いを大事に育てていく「カンザキメソッド」にあります。対話を通して、探究を進め、それを元に各大学の研究者に向けてどんなメッセージを発するのか。そこを一緒に作り上げていきます。
 					</p>
 				</div>
@@ -155,7 +156,7 @@
 				<p class="pt-6">
 					早稲田大学・慶應義塾大学・上智大学をはじめ、多くの難関大学合格者を輩出しています。
 				</p>
-				<article class="m-auto flex flex-wrap justify-start xl:justify-center gap-x-16 gap-y-5 xl:gap-5 text-left my-6 p-6 w-90p border">
+				<article class="m-auto flex flex-wrap justify-start xl:justify-center gap-x-16 gap-y-5 xl:gap-5 text-left mt-6 mb-16 p-6 w-90p border">
 					<ul>
 						<li>慶應義塾大学総合政策学部</li>
 						<li>慶應義塾大学環境情報学部</li>

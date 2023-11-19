@@ -22,6 +22,7 @@
 
       .item {
         &-name {
+          line-height: 46px;
           @include mq (screen02) {
             width: 170px;
           }
@@ -35,8 +36,11 @@
 
     input {
       width: 100%;
+      height: 46px;
+      margin-top: 0.5rem;
       @include mq (screen02) {
         width: 521px;
+        margin-top: 0;
       }
 
       &.wpcf7-submit {

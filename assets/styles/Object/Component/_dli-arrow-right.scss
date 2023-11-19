@@ -5,13 +5,15 @@
     color: #FFF;
     line-height: 1;
     position: relative;
-    width: 1em;
+    width: 3em;
     height: 0.1em;
     background: currentColor;
-    bottom: 2.8rem;
+    bottom: 3rem;
     left: 45vw;
     @include mq (screen03) {
-      left: 16rem;
+      bottom: 2.8rem;
+      left: 15.5rem;
+      width: 1.5em;
     }
   }
 }

@@ -1,7 +1,9 @@
+@use "../../Foundation/index" as *;@use "../../Foundation/index" as *;
+
 .p-policy {
   &__list {
     width: 80%;
-    @include mq(screen02) {
+    @include mq(screen03) {
       width: 40%;
     }
   }
