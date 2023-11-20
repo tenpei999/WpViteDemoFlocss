@@ -8,6 +8,8 @@ $mq-breakpoints: (
 //pc
 'screen04': 1280px,
 //pc
+'screen05': 1536px,
+//pc
 );
 
 @mixin mq($breakpoint: screen01) {

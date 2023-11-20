@@ -14,7 +14,7 @@
   <header class="p-header fixed z-10 w-screen">
     <nav class="c-logo mt-5">
       <a href="#">
-        <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px">
+        <img src="<?php echo do_shortcode('[image_path name="logo" extension="png"]') ?>" alt="大学入試小論文指導カンザキジュク" width="175px" height="25px" decoding=“async”>
       </a>
     </nav>
     <article class="p-nav">
@@ -25,7 +25,7 @@
           <div class="c-button-square__square"></div>
           <div class="c-button-square__square"></div>
         </div>
-        <P class="c-button-square__name">menu</P>
+        <P class="c-button-square__name font-kozuka">MENU</P>
       </nav>
     </article>
     <ul class="c-background--silver p-nav__body">

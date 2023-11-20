@@ -5,6 +5,7 @@
     position: relative;
     box-shadow: 4px 4px 10px 0px #00000040;
     aspect-ratio: 1 / 0.75;
+    max-width: 400px;
 
 
     &__head {
@@ -30,18 +31,31 @@
 
     &__title {
       padding-top: 20px;
-      line-height: 50px;
-      font-size: $mediunFontSize;
+      font-size: clamp(24px, 3vw, 36px);
+      font-family: $accentFont;
       display: inline-block;
-      position: relative;
-      border-bottom: 1px solid;
-      border-color: $gold;
+      @include mq (screen03) {
+        font-size: clamp(20px, 2vw, 24px);
+      }
     }
 
     &__sentence {
       padding: 30px 16px 0 16px;
-      font-size: $baseFontSize;
+      font-size: clamp(16px, 3vw, 24px);
       text-align: justify;
+      @include mq (screen03) {
+        font-size: clamp(16px, 1.1vw, 24px);
+      }
+    }
+  }
+
+  &--experience {
+    margin: auto;
+    height: auto;
+    width: 90%;
+    aspect-ratio: 0.82 / 1;
+    @include mq (screen02) {
+      width: 484px;
     }
   }
 }

@@ -4,11 +4,11 @@
  * Functions and definitions
  *
  * @package WordPress
- * @subpackage themrishvite
+ * @subpackage kjuku
  */
 
 //develop mode config
-define("IS_VITE_DEVELOPMENT", true);
+define("IS_VITE_DEVELOPMENT", false);
 
 //define
 define('DIST_DEF', 'dist');
@@ -66,6 +66,13 @@ add_action('wp_enqueue_scripts', function () {
 
 		// read manifest.json to figure out what to enqueue
 		$manifest = json_decode(file_get_contents(DIST_PATH . '/manifest.json'), true);
+
+		// Move 'main.js' to the front of the array if it exists
+		if (is_array($manifest) && isset($manifest['main.js'])) {
+			$mainJs = $manifest['main.js'];
+			unset($manifest['main.js']);
+			$manifest = ['main.js' => $mainJs] + $manifest;
+		}
 
 		// is ok
 		if (is_array($manifest)) {
@@ -125,10 +132,21 @@ $template_directory_uri = get_template_directory_uri();
 function get_image_path($file_name, $extension = 'png')
 {
 	global $template_directory_uri;
-	$img_path = "/assets/images/{$file_name}.{$extension}?";
-	$full_path = $template_directory_uri . $img_path . filemtime(get_template_directory() . $img_path);
-	return $full_path;
+	// イメージの相対パス
+	$img_relative_path = "/dist/assets/images/{$file_name}.{$extension}";
+
+	// サーバー上の実際のファイルパス
+	$full_file_path = get_template_directory() . $img_relative_path;
+
+	// filemtime() が機能するように、実際のファイルパスを使用
+	$time_stamp = file_exists($full_file_path) ? filemtime($full_file_path) : '';
+
+	// 最終的なURLを生成
+	$img_url = $template_directory_uri . $img_relative_path . '?' . $time_stamp;
+
+	return $img_url;
 }
+
 
 // ショートコードを追加する関数
 function get_image_path_shortcode($atts)

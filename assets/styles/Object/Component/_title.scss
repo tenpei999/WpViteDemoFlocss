@@ -13,6 +13,7 @@
     font-size: 32px;
     line-height: 64px;
     &__sub {
+      font-family: $accentFont;
       text-align: justify;
       text-align-last: justify;
       width: 93%;

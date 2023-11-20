@@ -12,14 +12,14 @@
   }
 
   &__sub {
-    font-size: 5vw;
-    line-height: 7.5vw;
+    font-size: 3vw;
+    line-height: 5.5vw;
     span {
       font-weight: 500;
     }
     @include mq (screen02) {
-      font-size: 4vw;
-      line-height: 5.5vw;
+      font-size: 2.5vw;
+      line-height: 5vw;
     }
     @include mq (screen03) {
       font-size: 1.5rem;
