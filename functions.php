@@ -7,19 +7,7 @@
  * @subpackage kjuku
  */
 
-//develop mode config
-define("IS_VITE_DEVELOPMENT", false);
-
-//define
-define('DIST_DEF', 'dist');
-define('DIST_URI',  get_template_directory_uri() . '/' . DIST_DEF);
-define('DIST_PATH', get_template_directory()     . '/' . DIST_DEF);
-
-define('JS_DEPENDENCY', array()); // array( 'jquery' ) as example
-define('JS_LOAD_IN_FOOTER', true); // load scripts in footer?
-
-define('VITE_SERVER', 'http://localhost:3000');
-define('VITE_ENTRY_POINT', '/main.js');
+require_once get_template_directory() . '/theme-config.php';
 
 /*
  * init theme support
@@ -159,3 +147,5 @@ function get_image_path_shortcode($atts)
 	return get_image_path($file_name, $extension);
 }
 add_shortcode('image_path', 'get_image_path_shortcode');
+
+
